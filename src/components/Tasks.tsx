@@ -22,7 +22,7 @@ export default function Tasks() {
     if (!user) return;
 
     try {
-      // Fetch active user packages
+      // Fetch active user packages from the packeg
       const { data: packages } = await supabase
         .from('user_packages')
         .select(`
